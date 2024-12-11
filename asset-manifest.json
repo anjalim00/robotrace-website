@@ -1,26 +1,32 @@
 {
   "files": {
-    "main.css": "/robotrace-website/static/css/main.32de4534.css",
-    "main.js": "/robotrace-website/static/js/main.1ff5f525.js",
+    "main.css": "/robotrace-website/static/css/main.6fed6d00.css",
+    "main.js": "/robotrace-website/static/js/main.65788290.js",
     "static/js/453.0cf9cf76.chunk.js": "/robotrace-website/static/js/453.0cf9cf76.chunk.js",
     "static/media/MoviePlacement@.png": "/robotrace-website/static/media/MoviePlacement@.741b70b8c932694bda9f.png",
     "static/media/Robot-Race-title@.png": "/robotrace-website/static/media/Robot-Race-title@.603e9873994e8c10ebb4.png",
     "static/media/Page2_Movie_Bottom@.png": "/robotrace-website/static/media/Page2_Movie_Bottom@.18fb381c343ba0613ac7.png",
     "static/media/Page2_Movie_Top@.png": "/robotrace-website/static/media/Page2_Movie_Top@.ca978d1731e2ffbb1c82.png",
     "static/media/Page2_Movie_Middle@.png": "/robotrace-website/static/media/Page2_Movie_Middle@.669f5938bd2d0412e8f7.png",
+    "static/media/MONT-BOLD.OTF": "/robotrace-website/static/media/MONT-BOLD.830d900e231880d4971d.OTF",
+    "static/media/MONT-SEMIBOLD.OTF": "/robotrace-website/static/media/MONT-SEMIBOLD.a9457c407e74c9d5ee38.OTF",
+    "static/media/MONT-REGULAR.OTF": "/robotrace-website/static/media/MONT-REGULAR.b17e99bb3d2db5073f74.OTF",
+    "static/media/Post3-Art@.png": "/robotrace-website/static/media/Post3-Art@.d12e869017c2af69ec33.png",
+    "static/media/Post-Art@.png": "/robotrace-website/static/media/Post-Art@.32492e69124fcd079839.png",
     "static/media/tour-extreme@.png": "/robotrace-website/static/media/tour-extreme@.939b463cc8731cdbdf9d.png",
     "static/media/RobotRace_icon@.png": "/robotrace-website/static/media/RobotRace_icon@.91edc5eacadb09072fd4.png",
+    "static/media/Post2-Art@.png": "/robotrace-website/static/media/Post2-Art@.1da82b29209a36f6e08f.png",
     "static/media/Leaderboard_Mockup@.png": "/robotrace-website/static/media/Leaderboard_Mockup@.b3285138ec163845922c.png",
     "static/media/Page2_TextBlock_Middle@.png": "/robotrace-website/static/media/Page2_TextBlock_Middle@.8df4e0c1d985f7cb1847.png",
     "static/media/Page2_TextBlock_Upper@.png": "/robotrace-website/static/media/Page2_TextBlock_Upper@.4f3941fc6f6c3dd7a4c1.png",
     "static/media/Page2_TextBlock_Lower@.png": "/robotrace-website/static/media/Page2_TextBlock_Lower@.90e312f0932d79269998.png",
     "index.html": "/robotrace-website/index.html",
-    "main.32de4534.css.map": "/robotrace-website/static/css/main.32de4534.css.map",
-    "main.1ff5f525.js.map": "/robotrace-website/static/js/main.1ff5f525.js.map",
+    "main.6fed6d00.css.map": "/robotrace-website/static/css/main.6fed6d00.css.map",
+    "main.65788290.js.map": "/robotrace-website/static/js/main.65788290.js.map",
     "453.0cf9cf76.chunk.js.map": "/robotrace-website/static/js/453.0cf9cf76.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32de4534.css",
-    "static/js/main.1ff5f525.js"
+    "static/css/main.6fed6d00.css",
+    "static/js/main.65788290.js"
   ]
 }
