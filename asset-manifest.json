@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/robotrace-website/static/css/main.6fed6d00.css",
-    "main.js": "/robotrace-website/static/js/main.85cf85e0.js",
+    "main.css": "/robotrace-website/static/css/main.f633b686.css",
+    "main.js": "/robotrace-website/static/js/main.df602d2b.js",
     "static/js/453.0cf9cf76.chunk.js": "/robotrace-website/static/js/453.0cf9cf76.chunk.js",
     "static/media/MoviePlacement@.png": "/robotrace-website/static/media/MoviePlacement@.741b70b8c932694bda9f.png",
     "static/media/Robot-Race-title@.png": "/robotrace-website/static/media/Robot-Race-title@.603e9873994e8c10ebb4.png",
@@ -21,12 +21,12 @@
     "static/media/Page2_TextBlock_Upper@.png": "/robotrace-website/static/media/Page2_TextBlock_Upper@.4f3941fc6f6c3dd7a4c1.png",
     "static/media/Page2_TextBlock_Lower@.png": "/robotrace-website/static/media/Page2_TextBlock_Lower@.90e312f0932d79269998.png",
     "index.html": "/robotrace-website/index.html",
-    "main.6fed6d00.css.map": "/robotrace-website/static/css/main.6fed6d00.css.map",
-    "main.85cf85e0.js.map": "/robotrace-website/static/js/main.85cf85e0.js.map",
+    "main.f633b686.css.map": "/robotrace-website/static/css/main.f633b686.css.map",
+    "main.df602d2b.js.map": "/robotrace-website/static/js/main.df602d2b.js.map",
     "453.0cf9cf76.chunk.js.map": "/robotrace-website/static/js/453.0cf9cf76.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fed6d00.css",
-    "static/js/main.85cf85e0.js"
+    "static/css/main.f633b686.css",
+    "static/js/main.df602d2b.js"
   ]
 }
