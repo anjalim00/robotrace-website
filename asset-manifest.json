@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/robotrace-website/static/css/main.d11e0b62.css",
-    "main.js": "/robotrace-website/static/js/main.6bfead9a.js",
+    "main.css": "/robotrace-website/static/css/main.37e803a0.css",
+    "main.js": "/robotrace-website/static/js/main.9bf0049b.js",
     "static/js/453.cbd90aa6.chunk.js": "/robotrace-website/static/js/453.cbd90aa6.chunk.js",
     "static/media/Page2_Movie_Middle.mp4": "/robotrace-website/static/media/Page2_Movie_Middle.2f7c17c7841f1f27fe45.mp4",
     "static/media/MoviePlacement.mp4": "/robotrace-website/static/media/MoviePlacement.42e455b626b6f8a0d193.mp4",
-    "static/media/Page2_Movie_Top.mp4": "/robotrace-website/static/media/Page2_Movie_Top.42e455b626b6f8a0d193.mp4",
+    "static/media/Page2_Movie_Top.mp4": "/robotrace-website/static/media/Page2_Movie_Top.0bc273e9dbfe12ff3ecd.mp4",
     "static/media/Page2_Movie_Bottom.mp4": "/robotrace-website/static/media/Page2_Movie_Bottom.d038805ff197757639a5.mp4",
     "static/media/Robot-Race-title@.png": "/robotrace-website/static/media/Robot-Race-title@.603e9873994e8c10ebb4.png",
     "static/media/MONT-BOLD.OTF": "/robotrace-website/static/media/MONT-BOLD.830d900e231880d4971d.OTF",
@@ -24,12 +24,12 @@
     "static/media/Page2_TextBlock_Upper@.png": "/robotrace-website/static/media/Page2_TextBlock_Upper@.4f3941fc6f6c3dd7a4c1.png",
     "static/media/Page2_TextBlock_Lower@.png": "/robotrace-website/static/media/Page2_TextBlock_Lower@.90e312f0932d79269998.png",
     "index.html": "/robotrace-website/index.html",
-    "main.d11e0b62.css.map": "/robotrace-website/static/css/main.d11e0b62.css.map",
-    "main.6bfead9a.js.map": "/robotrace-website/static/js/main.6bfead9a.js.map",
+    "main.37e803a0.css.map": "/robotrace-website/static/css/main.37e803a0.css.map",
+    "main.9bf0049b.js.map": "/robotrace-website/static/js/main.9bf0049b.js.map",
     "453.cbd90aa6.chunk.js.map": "/robotrace-website/static/js/453.cbd90aa6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d11e0b62.css",
-    "static/js/main.6bfead9a.js"
+    "static/css/main.37e803a0.css",
+    "static/js/main.9bf0049b.js"
   ]
 }
