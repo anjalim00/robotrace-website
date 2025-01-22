@@ -18,6 +18,57 @@ import LeftArt from '../assets/page4/left-corner-art.png'
 import RightArt from '../assets/page4/right-corner-art.png'
 
 const Page4 = () => {
+  const [formData, setFormData] = useState({
+        name: '',
+        email: ''
+    });
+    const [message, setMessage] = useState('');
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+          ...prevData,
+          [name]: value, // Dynamically update the state for the correct field
+        }));
+    };
+
+    const handleSubmit = async(event) => {
+        event.preventDefault();
+        setMessage('Submitting...');
+        if (!formData.name || !formData.email) {
+            setMessage('Please fill in both fields.');
+            return;
+        }
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            setMessage('Please enter a valid email address.');
+            return;
+        }
+        //setMessage(''); // Clear any previous messages
+
+        const authHeader = 'Basic ' + btoa('admin_martech' + ':' + '0123406789012');
+
+        // Send data to backend
+        try {
+          const response = await axios.post('https://martech-newsletter.onrender.com/submit', formData, {
+              headers: {
+                'Authorization': authHeader  // Add the Authorization header to the request
+              }
+          });
+          if (response.status === 200) {
+            setMessage('Thank you for subscribing!');
+            setFormData({ name: '', email: '' });
+          }
+        } catch (error) {
+            console.log(error)
+            setMessage('Oops, something went wrong. Please try again later.');
+        }
+    };
+
+    useEffect(() => {
+        console.log('Updated message:', message); // Log the updated message after it changes
+      }, [message]); // This will run whenever the `message` state changes
+
   return (
     <div className="container-fluid g-0 page4">
         <div className="topSection d-flex flex-column align-items-center justify-content-space">
@@ -48,13 +99,16 @@ const Page4 = () => {
         
         <div class="name-container">
           <label for="name" class="name-label">NAME</label>
-          <input type="name" id="name" class="name-input" placeholder="" />
+          <input type="text" id="name" name="name" class="name-input" value={formData.name} onChange={(e) => handleInputChange(e)} placeholder="" />
         </div>
         <div class="email-container">
           <label for="email" class="email-label">E-MAIL</label>
-          <input type="email" id="email" class="email-input" placeholder="" />
+          <input type="text" id="email" name="email" class="email-input" value={formData.email} onChange={(e) => handleInputChange(e)} placeholder="" />
+          <div className="message-container">
+              <span className="email-message">{message}</span>
+          </div>
         </div>
-        <div class="image-button">
+        <div class="image-button" onClick={handleSubmit}>
           <img src={SubmitButton} alt="Submit Button" class="submit-button" />
           <span class="button-text">SUBMIT</span>
         </div>
