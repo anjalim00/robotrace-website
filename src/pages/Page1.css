@@ -105,22 +105,22 @@
 .animation {
     /* position: absolute; */
     width: auto;
-    height: 63.61%;
+    height: 63.61vh;
     top: 10.83%;
     z-index: 0;
 }
 
 .rr-title {
     position: absolute;
-    top: 5.39%;
+    top: 6%;
     width: 55.33%;
     height: auto;
     z-index: 1;
 }
 
 .tour-extreme {
-    position: absolute;
-    top: 61.39%;
+    position: relative;
+    top: 20.39%;
     width: 29.58%;
     height: auto;
     z-index: 1;
