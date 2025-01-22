@@ -186,6 +186,18 @@
     border-bottom: 2px solid #1CC0DE; 
 }
 
+.message-container {
+  margin-top: 10px;/* Adds spacing above the message */
+  justify-content: center;
+}
+
+.email-message {
+  position: absolute;
+  font-family: 'Mont-Regular';
+  color: #1CC0DE;
+  font-size: 0.9rem;
+}
+
 .robot {
     position: absolute;
     left: 3%;
