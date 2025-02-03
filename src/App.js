@@ -5,7 +5,7 @@ import Page3 from './pages/Page3';
 import Page4 from './pages/Page4';
 
 import ReactGA from 'react-ga4';
-ReactGA.initialize('G-55DMXVSCM9');
+ReactGA.initialize('G-PHMK2E102H');
 
 function App() {
   useEffect(() => {
