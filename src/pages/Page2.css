@@ -4,6 +4,7 @@
     width: 100%;
     height: fit-content;
     margin-top: 10%;
+    overflow-x: hidden;
 }
 
 .headings {
@@ -23,4 +24,13 @@
 
 .movie {
     transition: 10s;
+}
+
+@media (max-width: 576px){
+    .headings {
+        font-size: 2vw;
+    }
+    .content {
+        font-size: 1.2vw;
+    }
 }

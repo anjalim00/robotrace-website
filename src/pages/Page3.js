@@ -58,19 +58,19 @@ const Page3 = () => {
         </div>
         <div className='row p-3 g-0'>
             <div className='col-4 text-left px-4'>
-                <p className='date-line'>October 2nd, 2024 <span className='ht-1'>Store Items</span></p>
-                <h4 className='heading'>New Store Items</h4>
-                <p className='p-content'>Spooky Halloween skins available only for a short time this month! Sale ends 11/15/2024. Come dress to kill in your favorite skin.</p>
+                <p className='date-line'>January 25th, 2025 <span className='ht-1'>Discord Opinion</span></p>
+                <h4 className='heading'>Is Sci-Fi Scary?</h4>
+                <p className='p-content'>Come to our new Discord Server and let us know if you think Science Fiction should be a cautionary tale. just good plain fun, or both!</p>
             </div>
             <div className='col-4 text-left px-4'>
-                <p className='date-line'>October 12th, 2024 <span className='ht-2'>User Art</span></p>
-                <h4 className='heading'>Fan Art Contest Winners</h4>
-                <p className='p-content'>Come view our winners in the user-art galleries on Discord, the voting is still open until later this week and there were more than a few clear winners. Come see!!</p>
+                <p className='date-line'>January 15th, 2025 <span className='ht-2'>Proposed Skins</span></p>
+                <h4 className='heading'>What the Future Looks like</h4>
+                <p className='p-content'>Let us show you some of the proposed robot skins for future releases - come share your opinion or just let us know what you want!</p>
             </div>
             <div className='col-4 text-left px-4'>
-                <p className='date-line'>October 20th, 2024 <span className='ht-3'>Patch Notes</span></p>
-                <h4 className='heading'>New Store Items</h4>
-                <p className='p-content'>New level concepts for 'Wasteland' can be shown - come vote for your favorites and let us know what people want! Voting ends on Discord, on 11/16/2024.</p>
+                <p className='date-line'>January 13th, 2025 <span className='ht-3'>Launch Date</span></p>
+                <h4 className='heading'>New Looks, More Fun</h4>
+                <p className='p-content'>After years of development, we are re-releasing Robot Race with a new wagering system and other new additions every month - join our Discord server to discover our plans for new updates, levels and robots!</p>
             </div>
         </div>
     </div>

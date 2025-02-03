@@ -1,7 +1,12 @@
 .page1 {
     background-color: black;
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
+    /* overflow-x: hidden; */
+}
+
+.top-bar {
+    background-color: black;
 }
 
 .ed-logo {
@@ -80,16 +85,12 @@
 }
 
 .wrapper {
+    background-color: black;
     position: relative;
     flex-direction: column;
     top: 11%;
-    /* background-color: black; */
     width: 100%;
     height: 90%;
-    /* background-image: url('../assets/page1/MoviePlacement@.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
 }
 
 .wrapper video {
@@ -98,12 +99,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video scales correctly */
-    z-index: 0; /* Places video behind other elements */
+    object-fit: cover; 
+    z-index: 0; 
 }
 
 .animation {
-    /* position: absolute; */
+    position: relative;
     width: auto;
     height: 63.61vh;
     top: 10.83%;
@@ -129,18 +130,20 @@
 .bottom-section {
     position: relative;
     background-color: black;
-    display: flex; /* Enables Flexbox */
-    flex-direction: column; /* Stack items vertically */
+    display: flex; 
+    flex-direction: column; 
     align-items: center;
-    height: 30%;
+    min-height: 30%;
+    height: auto;
 }
 
 .page1-dynamic-text {
     position: absolute;
-    top: 10%;
+    top: 12%;
     font-family: 'Mont-SemiBold';
     font-size: 3.1vw;
     color: #e8e8e8;
+    /* padding-bottom: 5%; */
 }
 
 .appstore {
@@ -164,5 +167,47 @@
     border-radius: 14px;
 }
 
+@media (max-width: 576px) {
+    .ed-logo{
+        left: 7%;
+        height: 5%;
+    }
+    .ed-name{
+        left: 5%;
+        top: 8%;
+        height: 1%;
+    }
+    .rr-title {
+        top: 15%;
+        width: 80%;
+    }
+    .tour-extreme {
+        top: 10%;
+        width: 35%;
+    }
+    .facebook, .twitter, .youtube, .instagram, .discord{
+        height: 4%;
+    }
+    .facebook{ left: 54%; }
+    .twitter{ left: 63%; }
+    .youtube{ left: 72%; }
+    .instagram{ left: 81%; }
+    .discord{ left: 90%; }
+    .rr-icon{
+        top: 5%;
+        height: 10%;
+    }
+    .bottom-section {
+        min-height: 20%;
+    }
+}
 
-
+@media (min-width: 577px) and ( max-width: 768px) {
+  
+    .facebook{ left: 66%; }
+    .twitter{ left: 72%; }
+    .youtube{ left: 78%; }
+    .instagram{ left: 84%; }
+    .discord{ left: 90%; }
+    
+}

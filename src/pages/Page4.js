@@ -1,4 +1,6 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page4.css';
 
@@ -73,22 +75,21 @@ const Page4 = () => {
     <div className="container-fluid g-0 page4">
         <div className="topSection d-flex flex-column align-items-center justify-content-space">
             <div className="row-top">
-                <div className="position-relative">
-                    <img src={Garlands} className="garland1 img-fluid" alt="Left Garland" />
-                    <p className="testimony1">A rocket-fueled<br />rampage!<br /><span className='author'>-WIRED</span></p>
-                </div>
+                {/* <div className="left-testimony"> */}
+                <img src={Garlands} className="garland1 img-fluid" alt="Left Garland" />
+                <p className="testimony1">A rocket-fueled<br />rampage!<br /><span className='author'>-WIRED</span></p>
+                {/* </div> */}
 
                 <img src={RankIcon} className="rank-icon img-fluid" alt="Rank Icon" />
 
-                <div className="position-relative">
-                    <img src={Garlands} className="garland2 img-fluid" alt="Right Garland" />
-                    <p className="testimony2">Humorous<br />and fun!<br /><span className='author'>-Indie Games Magazine</span></p>
-                </div>
+                {/* <div className="right-testimony"> */}
+                <img src={Garlands} className="garland2 img-fluid" alt="Right Garland" />
+                <p className="testimony2">Humorous<br />and fun!<br /><span className='author'>-Indie Games Magazine</span></p>
+                {/* </div> */}
+                
             </div>
-
-        {/* Rocket Divider */}
-        <img src={RocketDivider} className="rocket-divider img-fluid" alt="Rocket Divider" />
-      </div>
+            <img src={RocketDivider} className="rocket-divider img-fluid" alt="Rocket Divider" />
+        </div>
 
       <div className="midSection justify-content-center align-items-center">
         <img src={TextBox} alt="Text Box" className="text-box img-fluid" />
@@ -133,8 +134,8 @@ const Page4 = () => {
         <img src={ESRBrating} alt='Easley-Dunn logo' className='esrb-rating' />
         <p className='footer-content'>
           All Rights Reserved 2024 | Easley-Dunn Games |
-          <a href='http://easleydunnproductions.com/ContactUs.html' className='contact-link'> Contact Us</a> | 
-          <a href='https://easleydunnproductions.com/PrivacyPolicy.php' className='privacy-link'> Privacy Policy </a>
+          <a href='http://easleydunnproductions.com/ContactUs.html' target="_blank" className='contact-link'> Contact Us</a> | 
+          <a href='https://easleydunnproductions.com/PrivacyPolicy.php' target="_blank" className='privacy-link'> Privacy Policy </a>
            | Website by Phred | Website Design by SpiderHandz</p>
       </div>
     </div>

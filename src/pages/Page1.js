@@ -58,18 +58,18 @@ const Page1 = () => {
       </div>
       <div className='bottom-section justify-content-center align-items-center g-0'>
         <p className='page1-dynamic-text'>Join in The Competition Now!</p>
-        <div className='row d-flex justify-content-center align-items-center'>
-        <div className="col-auto d-flex justify-content-center align-items-center">
+        {/* <div className='row d-flex justify-content-center align-items-center'> */}
+        {/* <div className="col-auto d-flex justify-content-center align-items-center"> */}
             <a href="https://apps.apple.com/ge/app/robot-race/id539184198#?platform=iphone" target="_blank" rel="noopener noreferrer">
                 <img src={AppStoreButton} alt="Apple Store Button" className="img-fluid appstore" />
             </a>
-        </div>
-        <div className="col-auto d-flex justify-content-center align-items-center">
+        {/* </div> */}
+        {/* <div className="col-auto d-flex justify-content-center align-items-center"> */}
             <a href="https://play.google.com/store/apps/details?id=com.easleydunnproductions.robotrace&hl=en_US&gl=US" target="_blank" rel="noopener noreferrer" >
                 <img src={PlayStoreButton} alt="Google Playstore Button" className="img-fluid playstore" />
             </a>
-        </div>
-        </div>
+        {/* </div> */}
+        {/* </div> */}
         
       </div>
     </div>

@@ -3,12 +3,15 @@
     background-color: black;
     width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 
 .topSection {
-    
+    width: 100%;
+    height: 50%;
     position: relative;
-    padding: 3rem;
+    padding-top: 5%;
+    overflow: hidden;
 }
 
 .row-top {
@@ -20,32 +23,51 @@
 
 .garland1,
 .garland2 {
-    width: auto;
-    height: 29.65%; 
     position: relative;
-    top: 20%;
+    width: 22%;
+    top: 17%;
+}
+
+.garland1 {
+    left: 8%;
+}
+.garland2 {
+    right: 8%;
 }
 
 .testimony1,
 .testimony2 {
     position: absolute; 
-    width: 100%; 
-    top: 18%; 
+    width: 90%;
+    top: 22%; 
     color: #e8e8e8;
     font-family: 'Mont-Regular';
     text-align: center;
-    font-size: 1.6vw;
+    font-size: 1.5vw;
+    margin: 0%;
+    z-index: 10;
 }
-
+.testimony1 {
+    left: -26%;
+}
+.testimony2 {
+    right: -26%;
+}
 .rank-icon {
+    position: relative;
     width: 10%; 
     height: auto;
+    left: 0; right: 0; margin: auto;  
+    top: 13%;           
 }
 
 .rocket-divider {
+    position: relative;
     width: 47.48%; 
     height: auto;
-    margin-top: 1rem;
+    /* top: 20%; */
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .author {
@@ -55,7 +77,7 @@
 .midSection {
     background-color: #3c3c45;
     width: 100%;
-    height: fit-content;
+    height: auto;
     position: relative;
     padding-bottom: 5rem;
 }
@@ -63,7 +85,7 @@
 .text-box {
     position: relative;
     left: 21.96%;
-    top: 63.50%;
+    top: 10%;
     width: 58.28%;
     height: auto;
     margin-top: 3%;
@@ -73,7 +95,8 @@
 .stay-connected {
     position: absolute;
     left: 30%;
-    top: 16%;
+    /* top: 18%; */
+    margin-top: -25%;
     font-family: 'Mont-SemiBold';
     font-size: 2.5vw;
     color: #1CC0DE;
@@ -83,7 +106,8 @@
 .p4-content {
     position: absolute;
     left: 30%;
-    top: 25%;
+    /* top: 27%; */
+    margin-top: -21%;
     width: 42%;
     font-family: 'Mont-Regular';
     color: #1CC0DE;
@@ -94,9 +118,9 @@
 .image-button {
     position: absolute; 
     left: 56%;
-    top: 62%;
-    text-align: start;
-    width: fit-content;
+    margin-top: -8%;
+    /* text-align: start; */
+    width: 20%;
     height: auto;
 }
 
@@ -117,6 +141,11 @@
     text-shadow: -0.1vw 0.05vw 0.1vw #d8d8d8;
 }
 
+/* @media (max-width: 576px) {
+    .image-button { top: 38%; }
+    .button-text { top: 59%; }
+} */
+
 .image-button:hover .submit-button {
     filter: brightness(0.8); 
 }
@@ -124,16 +153,18 @@
 .name-container {
     position: absolute;
     left: 30%;
-    top: 38%;
+    top: 39%;
+    /* margin-top: -16%; */
     width: 50%;
 }
 
 .name-label {
     color: #e8e8e8; 
     font-family: 'Mont-Regular';
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     font-weight: bold;
     padding-right: 3.5%;
+    vertical-align: bottom;
 }
 
 .name-input {
@@ -154,16 +185,19 @@
 .email-container {
     position: absolute;
     left: 30%;
-    top: 50%;
+    top: 51%;
+    /* margin-top: -12%; */
     width: 50%;
+    height: auto;
 }
 
 .email-label {
     color: #e8e8e8; 
     font-family: 'Mont-Regular';
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     font-weight: bold;
     padding-right: 2%;
+    vertical-align: bottom;
 }
 
 .email-input {
@@ -195,13 +229,14 @@
   position: absolute;
   font-family: 'Mont-Regular';
   color: #1CC0DE;
-  font-size: 0.9rem;
+  font-size: 1.2vw;
 }
 
 .robot {
     position: absolute;
     left: 3%;
-    top: 52%;
+    /* top: 52%; */
+    bottom: 0%;
     width: 20%;
     height: auto;
 }
@@ -242,18 +277,24 @@
     position: absolute;
     left: 21%;
     top: 20%;
+    width: 5%;
+    height: auto;
 }
 
 .app-store {
     position: absolute;
     left: 36.23%;
     top: 20%;
+    width: 14%;
+    height: auto;
 }
 
 .play-store {
     position: absolute;
     left: 56.08%;
     top: 20%;
+    width: 14%;
+    height: auto;
 }
 
 .app-store:hover , .play-store:hover {
@@ -265,13 +306,15 @@
     position: absolute;
     left: 81.98%;
     top: 20%;
+    width: 11%;
+    height: auto;
 }
 
 .footer-content {
     position: absolute;
     font-family: 'Mont-Regular';
     color: #1CC0DE;
-    font-size: 0.85em;
+    font-size: 1.1vw;
     left: 50%;
     transform: translateX(-50%); 
     text-align: center;
@@ -287,4 +330,26 @@
 .contact-link:hover { color: #1CC0DE; }
 .privacy-link:hover { color: #1CC0DE; }
 
+@media (max-width: 576px) {
+    .midSection {
+        height: 50%;
+    }
+    .name-container { top: 16%; }
+    .email-container { top: 24%; }
+    .button-text { top: 57%; }
+    .robot { 
+        left: 0;
+        width: 30%;}
+}
 
+@media (min-width: 577px) and (max-width: 768px) {
+    .midSection {
+        height: 50%;
+    }
+    .name-container { top: 32%; }
+    .email-container { top: 42%; }
+    .button-text { top: 54%; }
+    .robot { 
+        left: 0;
+        width: 30%;}
+}
