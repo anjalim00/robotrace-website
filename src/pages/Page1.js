@@ -19,6 +19,7 @@ import DynamicText from '../assets/page1/Page1_DYNAMIC_TEXT@.png'
 import RRtitle from '../assets/page1/Robot-Race-title@.png'
 import RRicon from '../assets/page1/RobotRace_icon@.png'
 import TourExtreme from '../assets/page1/tour-extreme@.png'
+import ShareButton from '../assets/page1/Share_button.png'
 
 
 const Page1 = () => {
@@ -27,7 +28,16 @@ const Page1 = () => {
       <div className='top-bar g-0'>
         <img src={EDlogo} alt='Easley-Dunn logo' className='ed-logo'/>
         <img src={EDname} alt='Easley-Dunn' className='ed-name'/>
-        
+        <button 
+        className="btn d-block d-md-none me-3" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#socialLinks"
+        aria-expanded="false" 
+        aria-controls="socialLinks">
+        <img src={ShareButton} alt='Share button' className='share-button'/>
+        </button>
+        <div>
         <a href="https://www.facebook.com/robotrace/" target="_blank" rel="noopener noreferrer">
             <img src={FacebookButton} alt='Facebook button' className='facebook'/></a>
         <a href="https://x.com/EasleyDunnGames" target="_blank" rel="noopener noreferrer">
@@ -38,7 +48,7 @@ const Page1 = () => {
             <img src={InstagramButton} alt='Instagram Button' className='instagram' /></a>
         <a href="https://discord.gg/A5TJ2nNn35" target="_blank" rel="noopener noreferrer">
             <img src={DiscordButton} alt='Discord Button' className='discord' /></a>
-        
+        </div>
       </div>
       <img src={RRicon} alt='Robot Race Icon' className='img-fluid rr-icon' />
       

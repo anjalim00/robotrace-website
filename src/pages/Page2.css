@@ -28,9 +28,9 @@
 
 @media (max-width: 576px){
     .headings {
-        font-size: 2vw;
+        font-size: 3.5vw;
     }
     .content {
-        font-size: 1.2vw;
+        font-size: 2.5vw;
     }
 }

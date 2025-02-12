@@ -167,15 +167,20 @@
     border-radius: 14px;
 }
 
+.share-button {
+    position: absolute;
+    left: 77%;
+    width: 2%;
+    top:0.5%
+}
+.share-button-image {
+    width: 2%;
+    height: auto;
+}
+
 @media (max-width: 576px) {
-    .ed-logo{
-        left: 7%;
-        height: 5%;
-    }
-    .ed-name{
-        left: 5%;
-        top: 8%;
-        height: 1%;
+    .ed-logo, .ed-name{
+        display: none;
     }
     .rr-title {
         top: 15%;
@@ -195,7 +200,8 @@
     .discord{ left: 90%; }
     .rr-icon{
         top: 5%;
-        height: 10%;
+        left: 10%;
+        height: 13%;
     }
     .bottom-section {
         min-height: 20%;
