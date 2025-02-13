@@ -52,7 +52,7 @@ const Page4 = () => {
 
         // Send data to backend
         try {
-          const response = await axios.post('https://martech-newsletter.onrender.com/submit', formData, {
+          const response = await axios.post('https://martech-robotrace-ykgj.onrender.com/submit', formData, {
               headers: {
                 'Authorization': authHeader  // Add the Authorization header to the request
               }
