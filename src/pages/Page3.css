@@ -94,18 +94,18 @@
   .p-content {
     color: #e8e8e8;
     font-family: 'Mont-Regular';
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     /* white-space: nowrap; */
   }
 
   .p-content {
-    font-size: 1vw;
+    font-size: 1.2vw;
   }
 
   .heading {
     color: #e8e8e8;
     font-family: 'Mont-Bold';
-    font-size: 2vw;
+    font-size: 2.2vw;
   }
 
   .ht-1 {
@@ -130,3 +130,4 @@
     /* 50% { filter: brightness(1.5) } */
     100% { filter: brightness(1.5); }
   }
+

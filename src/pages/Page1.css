@@ -2,6 +2,8 @@
     background-color: black;
     max-width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     /* overflow-x: hidden; */
 }
 
@@ -90,7 +92,8 @@
     flex-direction: column;
     top: 11%;
     width: 100%;
-    height: 90%;
+    min-height: 90%;
+    flex-grow: 1;
 }
 
 .wrapper video {
@@ -179,6 +182,9 @@
 }
 
 @media (max-width: 576px) {
+    .wrapper video{
+        height: 80%;
+    }
     .ed-logo, .ed-name{
         display: none;
     }
@@ -205,6 +211,14 @@
     }
     .bottom-section {
         min-height: 20%;
+    }
+    .page1-dynamic-text {
+        font-size: 3.5vw;
+        top: -10%;
+    }
+    .appstore,.playstore{
+        width: 18%;
+        top: 30%;
     }
 }
 

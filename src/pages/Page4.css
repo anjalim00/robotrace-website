@@ -340,6 +340,30 @@
     .robot { 
         left: 0;
         width: 30%;}
+    .row-top {
+        flex-direction: column !important;
+        align-items: center; 
+        justify-content: center;
+    }
+    .garland1, .garland2 {
+        width: 40%; 
+        position: static;
+    }
+    .testimony1, .testimony2 {
+        position: static;
+        text-align: center;
+        width: 100%;
+        font-size: 3.3vw;
+        margin-top: -16%;
+    }
+    .author{
+        font-size: 2vw;
+    }
+    .rank-icon {
+        position: static;
+        margin: 10px 0;
+        width: 18%;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -352,4 +376,13 @@
     .robot { 
         left: 0;
         width: 30%;}
+}
+
+@media (min-width: 1025px) and (max-width: 3560px) {
+    .midSection {
+        height: 50%;
+    }
+    .p4-content {
+        padding-bottom: 40px;
+    }
 }

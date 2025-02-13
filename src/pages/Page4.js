@@ -74,7 +74,7 @@ const Page4 = () => {
   return (
     <div className="container-fluid g-0 page4">
         <div className="topSection d-flex flex-column align-items-center justify-content-space">
-            <div className="row-top">
+            <div className="row-top ">
                 {/* <div className="left-testimony"> */}
                 <img src={Garlands} className="garland1 img-fluid" alt="Left Garland" />
                 <p className="testimony1">A rocket-fueled<br />rampage!<br /><span className='author'>-WIRED</span></p>

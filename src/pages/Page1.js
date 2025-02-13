@@ -28,14 +28,10 @@ const Page1 = () => {
       <div className='top-bar g-0'>
         <img src={EDlogo} alt='Easley-Dunn logo' className='ed-logo'/>
         <img src={EDname} alt='Easley-Dunn' className='ed-name'/>
-        <button 
-        className="btn d-block d-md-none me-3" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#socialLinks"
-        aria-expanded="false" 
-        aria-controls="socialLinks">
-        <img src={ShareButton} alt='Share button' className='share-button'/>
+        <button  className="btn d-none me-3" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#socialLinks"
+                aria-expanded="false" aria-controls="socialLinks">
+            <img src={ShareButton} alt='Share button' className='share-button'/>
         </button>
         <div>
         <a href="https://www.facebook.com/robotrace/" target="_blank" rel="noopener noreferrer">
