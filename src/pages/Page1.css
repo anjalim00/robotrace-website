@@ -122,6 +122,16 @@
     z-index: 1;
 }
 
+.title {
+    position: absolute;
+    /* top: 6%; */
+    top: 50%;  /* Adjust based on container */
+    transform: translate(0%, -60%);
+    width: 55%;
+    height: auto;
+    z-index: 1;
+}
+
 .tour-extreme {
     position: relative;
     top: 20.39%;
@@ -188,9 +198,8 @@
     .ed-logo, .ed-name{
         display: none;
     }
-    .rr-title {
-        top: 15%;
-        width: 80vw;
+    .title {
+        width: 80%;
     }
     .tour-extreme {
         top: 10%;
@@ -217,9 +226,11 @@
         top: -10%;
     }
     .appstore,.playstore{
-        width: 18%;
+        width: 20%;
         top: 30%;
     }
+    .appstore{ left: 25%; }
+    .playstore{ left: 55%; }
 }
 
 @media (min-width: 577px) and ( max-width: 768px) {

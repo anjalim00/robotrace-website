@@ -20,6 +20,7 @@ import RRtitle from '../assets/page1/Robot-Race-title@.png'
 import RRicon from '../assets/page1/RobotRace_icon@.png'
 import TourExtreme from '../assets/page1/tour-extreme@.png'
 import ShareButton from '../assets/page1/Share_button.png'
+import Title from '../assets/page1/Title.png'
 
 
 const Page1 = () => {
@@ -51,15 +52,15 @@ const Page1 = () => {
       <div className='wrapper d-flex justify-content-center align-items-center g-0'>
         <video src={Movie} autoPlay loop muted playsInline className="background-video"/>
         <img
-            src={RRtitle}
+            src={Title}
             alt='Robot Race Title'
-            className='img-fluid rr-title'
+            className='img-fluid title'
         />
-        <img
+        {/* <img
             src={TourExtreme}
             alt='Tour Extreme'
             className='img-fluid tour-extreme'
-        />
+        /> */}
         
       </div>
       <div className='bottom-section justify-content-center align-items-center g-0'>
