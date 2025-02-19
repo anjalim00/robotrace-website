@@ -1,233 +1,278 @@
 .page1 {
-    background-color: black;
-    max-width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* overflow-x: hidden; */
+  background-color: black;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* overflow-x: hidden; */
 }
 
 .top-bar {
-    background-color: black;
+  background-color: black;
+  /* line-height: 1; Adjust line height to reduce space between elements */
 }
 
 .ed-logo {
-    position: absolute;
-    left: 4.87%;
-    top: 1.76%;
-    width: auto;
-    height: 6.48%;
+  position: absolute;
+  left: 4.87%;
+  top: 1.76%;
+  width: auto;
+  height: 6.48%;
 }
 
 .ed-name {
-    position: absolute;
-    left: 3.49%;
-    top: 9.07%;
-    width: auto;
-    height: 1.39%;
+  position: absolute;
+  left: 3.49%;
+  top: 9.07%;
+  width: auto;
+  height: 1.39%;
 }
 
 .facebook {
-    position: absolute;
-    left: 73.39%;
-    top: 3.15%;
-    width: auto;
-    height: 5.46%;
+  position: absolute;
+  left: 73.39%;
+  top: 3.15%;
+  width: auto;
+  height: 5.46%;
 }
-.facebook:hover { transform: scale(1.25); }
-.facebook:active { filter: brightness(1.6); }
+.facebook:hover {
+  transform: scale(1.25);
+}
+.facebook:active {
+  filter: brightness(1.6);
+}
 
 .twitter {
-    position: absolute;
-    left: 78%;
-    top: 3.15%;
-    width: auto;
-    height: 5.46%;
+  position: absolute;
+  left: 78%;
+  top: 3.15%;
+  width: auto;
+  height: 5.46%;
 }
-.twitter:hover { transform: scale(1.25); }
-.twitter:active { filter: brightness(1.6); }
+.twitter:hover {
+  transform: scale(1.25);
+}
+.twitter:active {
+  filter: brightness(1.6);
+}
 
 .youtube {
-    position: absolute;
-    left: 82.67%;
-    top: 3.15%;
-    width: auto;
-    height: 5.46%;
+  position: absolute;
+  left: 82.67%;
+  top: 3.15%;
+  width: auto;
+  height: 5.46%;
 }
-.youtube:hover { transform: scale(1.25); }
-.youtube:active { filter: brightness(1.6); }
+.youtube:hover {
+  transform: scale(1.25);
+}
+.youtube:active {
+  filter: brightness(1.6);
+}
 
 .instagram {
-    position: absolute;
-    left: 87.35%;
-    top: 3.15%;
-    width: auto;
-    height: 5.46%;
+  position: absolute;
+  left: 87.35%;
+  top: 3.15%;
+  width: auto;
+  height: 5.46%;
 }
-.instagram:hover { transform: scale(1.25); }
-.instagram:active { filter: brightness(1.6); }
+.instagram:hover {
+  transform: scale(1.25);
+}
+.instagram:active {
+  filter: brightness(1.6);
+}
 
 .discord {
-    position: absolute;
-    left: 91.90%;
-    top: 3.15%;
-    width: auto;
-    height: 5.46%;
-} 
-.discord:hover { transform: scale(1.25); }
-.discord:active { filter: brightness(1.6); }
+  position: absolute;
+  left: 91.9%;
+  top: 3.15%;
+  width: auto;
+  height: 5.46%;
+}
+.discord:hover {
+  transform: scale(1.25);
+}
+.discord:active {
+  filter: brightness(1.6);
+}
 
 .rr-icon {
-    position: absolute;
-    left: 18.64%;
-    top: 4.54%;
-    width: auto;
-    height: 17.96%;
-    z-index: 1;
+  position: absolute;
+  left: 18.64%;
+  top: 4.54%;
+  width: auto;
+  height: 17.96%;
+  z-index: 1;
 }
 
 .wrapper {
-    background-color: black;
-    position: relative;
-    flex-direction: column;
-    top: 11%;
-    width: 100%;
-    min-height: 90%;
-    flex-grow: 1;
+  background-color: black;
+  position: relative;
+  flex-direction: column;
+  top: 3%;
+  width: 100%;
+  min-height: 80%;
+  flex-grow: 1;
 }
 
 .wrapper video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: 0; 
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .animation {
-    position: relative;
-    width: auto;
-    height: 63.61vh;
-    top: 10.83%;
-    z-index: 0;
+  position: relative;
+  width: auto;
+  height: 63.61vh;
+  top: 10.83%;
+  z-index: 0;
 }
 
 .rr-title {
-    position: absolute;
-    top: 6%;
-    width: 55.33%;
-    height: auto;
-    z-index: 1;
+  position: absolute;
+  top: 6%;
+  width: 55.33%;
+  height: auto;
+  z-index: 1;
 }
 
 .tour-extreme {
-    position: relative;
-    top: 20.39%;
-    width: 29.58%;
-    height: auto;
-    z-index: 1;
+  position: relative;
+  top: 20.39%;
+  width: 29.58%;
+  height: auto;
+  z-index: 1;
 }
 
 .bottom-section {
-    position: relative;
-    background-color: black;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-    min-height: 30%;
-    height: auto;
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 30%;
+  height: auto;
 }
 
 .page1-dynamic-text {
-    position: absolute;
-    top: 12%;
-    font-family: 'Mont-SemiBold';
-    font-size: 3.1vw;
-    color: #e8e8e8;
-    /* padding-bottom: 5%; */
+  position: absolute;
+  top: 12%;
+  font-family: "Mont-SemiBold";
+  font-size: 3.1vw;
+  color: #e8e8e8;
 }
 
 .appstore {
-    position: absolute;
-    left: 31%;
-    top: 47%;
-    width: 16%;
-    height: auto;
+  position: absolute;
+  left: 31%;
+  top: 47%;
+  width: 16%;
+  height: auto;
 }
 
 .playstore {
-    position: absolute;
-    left: 51%;
-    top: 47%;
-    width: 16%;
-    height: auto;
+  position: absolute;
+  left: 51%;
+  top: 47%;
+  width: 16%;
+  height: auto;
 }
 
-.appstore:hover, .playstore:hover {
-    box-shadow: 0 0 15px #e8e8e8;
-    border-radius: 14px;
+.appstore:hover,
+.playstore:hover {
+  box-shadow: 0 0 15px #e8e8e8;
+  border-radius: 14px;
 }
 
 .share-button {
-    position: absolute;
-    left: 77%;
-    width: 2%;
-    top:0.5%
+  position: absolute;
+  left: 77%;
+  width: 2%;
+  top: 0.5%;
 }
 .share-button-image {
-    width: 2%;
-    height: auto;
+  width: 2%;
+  height: auto;
 }
 
 @media (max-width: 576px) {
-    .wrapper video{
-        height: 80%;
-    }
-    .ed-logo, .ed-name{
-        display: none;
-    }
-    .rr-title {
-        top: 15%;
-        width: 80%;
-    }
-    .tour-extreme {
-        top: 10%;
-        width: 35%;
-    }
-    .facebook, .twitter, .youtube, .instagram, .discord{
-        height: 4%;
-    }
-    .facebook{ left: 54%; }
-    .twitter{ left: 63%; }
-    .youtube{ left: 72%; }
-    .instagram{ left: 81%; }
-    .discord{ left: 90%; }
-    .rr-icon{
-        top: 5%;
-        left: 10%;
-        height: 13%;
-    }
-    .bottom-section {
-        min-height: 20%;
-    }
-    .page1-dynamic-text {
-        font-size: 3.5vw;
-        top: -10%;
-    }
-    .appstore,.playstore{
-        width: 18%;
-        top: 30%;
-    }
+  .wrapper video {
+    height: 90%;
+  }
+  .ed-logo,
+  .ed-name {
+    display: none;
+  }
+  .rr-title {
+    top: 15%;
+    width: 80%;
+  }
+  .tour-extreme {
+    top: 10%;
+    width: 35%;
+  }
+  .facebook,
+  .twitter,
+  .youtube,
+  .instagram,
+  .discord {
+    height: 4%;
+  }
+  .facebook {
+    left: 54%;
+  }
+  .twitter {
+    left: 63%;
+  }
+  .youtube {
+    left: 72%;
+  }
+  .instagram {
+    left: 81%;
+  }
+  .discord {
+    left: 90%;
+  }
+  .rr-icon {
+    top: 5%;
+    left: 10%;
+    height: 13%;
+  }
+  .bottom-section {
+    min-height: 20%;
+  }
+  .page1-dynamic-text {
+    font-size: 3.5vw;
+    top: -10%;
+  }
+  .appstore,
+  .playstore {
+    width: 18%;
+    top: 30%;
+  }
 }
 
-@media (min-width: 577px) and ( max-width: 768px) {
-  
-    .facebook{ left: 66%; }
-    .twitter{ left: 72%; }
-    .youtube{ left: 78%; }
-    .instagram{ left: 84%; }
-    .discord{ left: 90%; }
-    
+@media (min-width: 577px) and (max-width: 768px) {
+  .facebook {
+    left: 66%;
+  }
+  .twitter {
+    left: 72%;
+  }
+  .youtube {
+    left: 78%;
+  }
+  .instagram {
+    left: 84%;
+  }
+  .discord {
+    left: 90%;
+  }
 }
