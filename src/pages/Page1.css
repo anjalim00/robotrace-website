@@ -117,7 +117,7 @@
 .rr-title {
     position: absolute;
     top: 6%;
-    width: 55.33%;
+    width: 55.33vw;
     height: auto;
     z-index: 1;
 }
@@ -190,7 +190,7 @@
     }
     .rr-title {
         top: 15%;
-        width: 80%;
+        width: 80vw;
     }
     .tour-extreme {
         top: 10%;

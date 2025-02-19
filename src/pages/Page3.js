@@ -16,7 +16,7 @@ const Page3 = () => {
         <p className="news-updates">NEWS and UPDATES</p>
 
         {/* Bootstrap Carousel */}
-        <Carousel interval={10000} indicators={true} controls={false}>
+        <Carousel interval={5000} wrap={true} pause={false} indicators={true} controls={false}>
             {/* Slide 1 */}
             <Carousel.Item>
                 <div className="row px-5 pb-5 d-flex align-items-center justify-content-center">
