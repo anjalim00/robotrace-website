@@ -3,15 +3,13 @@
 .custom-navbar {
   background-color: black;
   color: white;
-  padding: 5px 0;
-  min-height: 55px;
 }
 
 /* Style for social media icons */
 .social-icon {
-  width: 50px;
-  height: 50px;
-  transition: transform 0.2s, filter 0.2s;
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.1s, filter 0.1s;
 }
 
 .social-icon:hover {
@@ -82,3 +80,5 @@
   background-color: black;
   color: white;
 }
+
+/* ------CORRECT-------- */
