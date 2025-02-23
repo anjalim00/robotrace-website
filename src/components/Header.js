@@ -1,20 +1,28 @@
-import React, { useState } from 'react';
-import { Container, Navbar, Offcanvas } from 'react-bootstrap';
-import './Header.css';
-import MenuIcon from '../assets/page1/Share_button.png';
-import CloseIcon from '../assets/page1/Back_button.png';
+import React, { useState } from "react";
+import { Container, Navbar, Offcanvas } from "react-bootstrap";
+import "./Header.css";
+import MenuIcon from "../assets/page1/Share_button.png";
+import CloseIcon from "../assets/page1/Back_button.png";
 
-import DiscordButton from '../assets/page1/Discord_normal@.png';
-import FacebookButton from '../assets/page1/Facebook_normal@.png';
-import TwitterButton from '../assets/page1/X_normal@.png';
-import InstagramButton from '../assets/page1/Instagram_normal@.png';
-import YoutubeButton from '../assets/page1/Youtube_normal@.png';
+import DiscordButton from "../assets/page1/Discord_normal@.png";
+import FacebookButton from "../assets/page1/Facebook_normal@.png";
+import TwitterButton from "../assets/page1/X_normal@.png";
+import InstagramButton from "../assets/page1/Instagram_normal@.png";
+import YoutubeButton from "../assets/page1/Youtube_normal@.png";
 
 function Header() {
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const handleClose = () => {
+    const offcanvas = document.getElementById("offcanvasNavbar");
+    if (offcanvas) {
+      offcanvas.style.backgroundColor = "#14a0bf"; // Keep blue during close animation
+      setTimeout(() => {
+        setShow(false);
+      }, 100); // Delay hiding to match Bootstrap animation duration (default ~300ms)
+    }
+  };
 
   return (
     <>
