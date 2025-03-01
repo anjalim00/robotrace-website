@@ -133,7 +133,7 @@ const Page4 = () => {
         </a>
         <img src={ESRBrating} alt='Easley-Dunn logo' className='esrb-rating' />
         <p className='footer-content'>
-          All Rights Reserved 2024 | Easley-Dunn Games |
+          All Rights Reserved 2025 | Easley-Dunn Games |
           <a href='http://easleydunnproductions.com/ContactUs.html' target="_blank" className='contact-link'> Contact Us</a> | 
           <a href='https://easleydunnproductions.com/PrivacyPolicy.php' target="_blank" className='privacy-link'> Privacy Policy </a>
            | Website by Phred | Website Design by SpiderHandz</p>

@@ -136,11 +136,21 @@
 }
 
 .rr-title {
-  position: absolute;
-  top: 6%;
-  width: 55.33%;
-  height: auto;
-  z-index: 1;
+    position: absolute;
+    top: 6%;
+    width: 55.33vw;
+    height: auto;
+    z-index: 1;
+}
+
+.title {
+    position: absolute;
+    /* top: 6%; */
+    top: 50%;  /* Adjust based on container */
+    transform: translate(0%, -60%);
+    width: 55%;
+    height: auto;
+    z-index: 1;
 }
 
 .tour-extreme {
@@ -203,60 +213,45 @@
 }
 
 @media (max-width: 576px) {
-  .wrapper video {
-    height: 90%;
-  }
-  .ed-logo,
-  .ed-name {
-    display: none;
-  }
-  .rr-title {
-    top: 15%;
-    width: 80%;
-  }
-  .tour-extreme {
-    top: 10%;
-    width: 35%;
-  }
-  .facebook,
-  .twitter,
-  .youtube,
-  .instagram,
-  .discord {
-    height: 4%;
-  }
-  .facebook {
-    left: 54%;
-  }
-  .twitter {
-    left: 63%;
-  }
-  .youtube {
-    left: 72%;
-  }
-  .instagram {
-    left: 81%;
-  }
-  .discord {
-    left: 90%;
-  }
-  .rr-icon {
-    top: 5%;
-    left: 10%;
-    height: 13%;
-  }
-  .bottom-section {
-    min-height: 20%;
-  }
-  .page1-dynamic-text {
-    font-size: 3.5vw;
-    top: -10%;
-  }
-  .appstore,
-  .playstore {
-    width: 18%;
-    top: 30%;
-  }
+    .wrapper video{
+        height: 80%;
+    }
+    .ed-logo, .ed-name{
+        display: none;
+    }
+    .title {
+        width: 80%;
+    }
+    .tour-extreme {
+        top: 10%;
+        width: 35%;
+    }
+    .facebook, .twitter, .youtube, .instagram, .discord{
+        height: 4%;
+    }
+    .facebook{ left: 54%; }
+    .twitter{ left: 63%; }
+    .youtube{ left: 72%; }
+    .instagram{ left: 81%; }
+    .discord{ left: 90%; }
+    .rr-icon{
+        top: 5%;
+        left: 10%;
+        height: 13%;
+    }
+    .bottom-section {
+        min-height: 20%;
+    }
+    .page1-dynamic-text {
+        font-size: 3.5vw;
+        top: -10%;
+    }
+    .appstore,.playstore{
+        width: 20%;
+        top: 30%;
+    }
+    .appstore{ left: 25%; }
+    .playstore{ left: 55%; }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
