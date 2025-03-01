@@ -49,7 +49,7 @@ function Header() {
               </button>
               <Offcanvas.Title
                 id="offcanvasNavbarLabel"
-                className="ms-2 mt-5 text-white text-center"
+                className="text-white text-center"
               >
                 Follow Us Now
               </Offcanvas.Title>
@@ -58,8 +58,8 @@ function Header() {
               <div className="container">
                 <Container fluid>
                   {/* For larger screens: single row */}
-                  <div className="d-none d-md-flex row justify-content-end align-items-center w-100 mx-0 px-0">
-                    <div className="col-auto">
+                  <div className="d-none d-md-flex row justify-content-end align-items-center w-100 px-0 mt-5">
+                    <div className="col-auto  ">
                       <a
                         href="https://www.facebook.com/robotrace/"
                         target="_blank"
@@ -68,7 +68,7 @@ function Header() {
                         <img
                           src={FacebookButton}
                           alt="Facebook button"
-                          className="social-icon"
+                          className=" social-icon facebook"
                         />
                       </a>
                     </div>
@@ -81,7 +81,7 @@ function Header() {
                         <img
                           src={TwitterButton}
                           alt="Twitter Button"
-                          className="social-icon"
+                          className="social-icon twitter"
                         />
                       </a>
                     </div>
@@ -94,7 +94,7 @@ function Header() {
                         <img
                           src={YoutubeButton}
                           alt="Youtube Button"
-                          className="social-icon"
+                          className="social-icon youtube"
                         />
                       </a>
                     </div>
@@ -107,7 +107,7 @@ function Header() {
                         <img
                           src={InstagramButton}
                           alt="Instagram Button"
-                          className="social-icon"
+                          className="social-icon instagram"
                         />
                       </a>
                     </div>
@@ -120,7 +120,7 @@ function Header() {
                         <img
                           src={DiscordButton}
                           alt="Discord Button"
-                          className="social-icon"
+                          className="social-icon discord"
                         />
                       </a>
                     </div>
