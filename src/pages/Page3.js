@@ -2,8 +2,8 @@ import React, {useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page3.css';
 import { Carousel, Modal, Button, Dropdown } from 'react-bootstrap';
-import TableComponent from "../component/TableComponent";
-import FullLeaderboard from "../component/FullLeaderboard";
+import TableComponent from "../components/TableComponent";
+import FullLeaderboard from "../components/FullLeaderboard";
 
 // Page3 Assets
 import Separator from '../assets/page3/Diagonal-Seperator@.png'

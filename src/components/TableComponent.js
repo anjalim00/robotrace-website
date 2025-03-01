@@ -1,6 +1,6 @@
 // src/components/TableComponent.js
 import React, { useState, useEffect } from "react";
-import { database } from "./firebaseConfig";
+import { database } from "./firebaseConfig.js";
 import { ref, onValue } from "firebase/database";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import rank1 from '../assets/page3/icon_rank_gold@.png';

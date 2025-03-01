@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { database } from "./firebaseConfig";
+import { database } from "./firebaseConfig.js";
 import { ref, onValue } from "firebase/database";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Table.css';
