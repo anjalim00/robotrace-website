@@ -1,0 +1,49 @@
+
+.custom-table {
+    width: 100%;
+    height: fit-content;
+    border-collapse: collapse;
+    background-color: #041B2D;
+    color: white;
+    overflow: hidden;
+    font-family: 'Mont-Regular';
+    font-size: 1.3vw;
+}
+
+.custom-table th {
+    background-color: black;
+    padding: 2%;
+    /* padding-left: 20px; */
+    text-align: left;
+    font-size: 1.5vw;
+    /* border: 1px solid white; */
+}
+
+.custom-table td {
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #333;
+}
+
+.rank-badge {
+    min-width: 50px;
+    min-height: 50px;
+    width: 30%;
+    height: 30%;
+    align-items: center;
+}
+
+.loading-text {
+    font-family: 'Mont-Regular';
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 100%;
+}
+
+.scrollable-container {
+    max-height: 400px; /* Adjust height as needed */
+    overflow-y: auto;
+    border: 1px solid #041B2D;
+    padding: 10px;
+}

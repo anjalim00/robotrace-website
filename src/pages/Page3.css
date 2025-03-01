@@ -38,6 +38,7 @@
   color: #e8e8e8;
   font-size: 1.2vw;
   white-space: nowrap;
+  line-height: 0.5;
 }
 
 .button-container {
@@ -46,7 +47,11 @@
     align-items: center;
     padding-top: 5%;
   }
-  
+ 
+  .modal {
+    background-color: #041B2D;
+  }
+
   .custom-button {
     background-color: #322c3f; 
     border: 2px solid #1577ac;
@@ -59,24 +64,25 @@
     transition: transform 0.2s, box-shadow 0.2s;
     width: auto; height: auto;
     font-size: 1.3vw;
+    word-wrap: no-wrap;
   }
   
   .custom-button:hover {
     transform: scale(1.05); 
-    box-shadow: 0 0 10px #0078ff; /* Glow effect */
+    box-shadow: 0 0 10px #0078ff; 
   }
   
   .custom-button:active {
     transform: scale(0.95); 
-    box-shadow: 0 0 5px #0078ff;/* Shrink slightly on click */
-  }
+    box-shadow: 0 0 5px #0078ff;
+  }  
 
   .separator {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 5%;
+    margin-top: 5%;
     width: 100vw;
     max-width: 826px;
 

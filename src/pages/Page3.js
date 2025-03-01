@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page3.css';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Modal, Button, Dropdown } from 'react-bootstrap';
+import TableComponent from "../component/TableComponent";
+import FullLeaderboard from "../component/FullLeaderboard";
 
 // Page3 Assets
 import Separator from '../assets/page3/Diagonal-Seperator@.png'
@@ -10,12 +12,29 @@ import UpdateImg2 from '../assets/page3/Post2-Art@.png'
 import UpdateImg3 from '../assets/page3/Post3-Art@.png'
 
 const Page3 = () => {
+
+  const [showModal, setShowModal] = useState(false);
+  const [selectedMap, setSelectedMap] = useState("All Maps");
+
   return (
     <div className="container-fluid g-0 page3">
+        <div className='row g-0'>
+            <div className='col-5 p-5 g-0'>
+                <p className='lb-title'>Leaderboard</p>
+                <p className='lb-text'>It's a race to the end, but which one will be the hero?</p>
+                <div class="button-container">
+                    <button class="custom-button" onClick={() => setShowModal(true)}>View All Leaderboards</button>
+                </div>
+            </div>
+            <div className='col-7 g-0 '>
+                <div>
+                    <TableComponent/>
+                </div>
+            </div>
+        </div>
         <img src={Separator} alt="Separator image" className="separator" />
         <p className="news-updates">NEWS and UPDATES</p>
 
-        {/* Bootstrap Carousel */}
         <Carousel interval={5000} wrap={true} pause={false} indicators={true} controls={false}>
             {/* Slide 1 */}
             <Carousel.Item>
@@ -65,6 +84,29 @@ const Page3 = () => {
                 </div>
             </Carousel.Item>
         </Carousel>
+
+        <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="modal">
+                <Modal.Header closeButton>
+                    <Modal.Title>Full Leaderboard</Modal.Title>
+                    <Dropdown className="ms-3">
+                        <Dropdown.Toggle variant="secondary">
+                            {selectedMap}
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <Dropdown.Item onClick={() => setSelectedMap("All Maps")}>All Maps</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectedMap("Map 1")}>Map 1</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectedMap("Map 2")}>Map 2</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectedMap("Map 3")}>Map 3</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                </Modal.Header>
+                <Modal.Body>
+                    <FullLeaderboard />
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={() => setShowModal(false)}>Close</Button>
+                </Modal.Footer>
+        </Modal>
     </div>
   );
 };
