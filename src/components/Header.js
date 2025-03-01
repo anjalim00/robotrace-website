@@ -26,7 +26,7 @@ function Header() {
 
   return (
     <>
-      <Navbar expand="md" className="custom-navbar mt-4">
+      <Navbar expand="md" className="custom-navbar ">
         <Container fluid>
           <Navbar.Brand href="#"></Navbar.Brand>
           <Navbar.Toggle

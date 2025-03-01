@@ -3,11 +3,13 @@
 .custom-navbar {
   background-color: black;
   color: white;
+  height: 10%;
 }
 
 /* Style for social media icons */
 .social-icon {
-  width: 3.3rem;
+  margin-top: 1.8%;
+  width: 2.5rem;
   height: auto;
   transition: transform 0.1s, filter 0.1s;
 }
@@ -23,7 +25,7 @@
 .custom-toggle {
   border: none; /* Remove default border */
   background: transparent; /* Make background transparent */
-  padding: 1; /* Remove extra spacing */
+  /* margin-top: 5%;; */
 }
 
 .menu-icon {

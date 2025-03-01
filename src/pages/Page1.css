@@ -147,7 +147,7 @@
     position: absolute;
     /* top: 6%; */
     top: 50%;  /* Adjust based on container */
-    transform: translate(0%, -60%);
+    transform: translate(0%, -55%);
     width: 55%;
     height: auto;
     z-index: 1;

@@ -20,7 +20,8 @@ import RRtitle from "../assets/page1/Robot-Race-title@.png";
 import RRicon from "../assets/page1/RobotRace_icon@.png";
 import TourExtreme from "../assets/page1/tour-extreme@.png";
 import ShareButton from "../assets/page1/Share_button.png";
-import Header from "../components/Header";import Title from '../assets/page1/Title.png'
+import Header from "../components/Header";
+import Title from '../assets/page1/Title.png'
 
 
 const Page1 = () => {
