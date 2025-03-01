@@ -1,0 +1,89 @@
+/* Header.css */
+
+.custom-navbar {
+  background-color: black;
+  color: white;
+  height: 10%;
+}
+
+/* Style for social media icons */
+.social-icon {
+  margin-top: 1.8%;
+  width: 2.5rem;
+  height: auto;
+  transition: transform 0.1s, filter 0.1s;
+}
+
+.social-icon:hover {
+  transform: scale(1.25);
+}
+
+.social-icon:active {
+  filter: brightness(1.6);
+}
+
+.custom-toggle {
+  border: none; /* Remove default border */
+  background: transparent; /* Make background transparent */
+  /* margin-top: 5%;; */
+}
+
+.menu-icon {
+  width: 50px; /* Adjust size */
+  height: auto;
+  cursor: pointer; /* Show pointer on hover */
+}
+.custom-close-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  z-index: 10;
+}
+
+.close-icon {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+}
+/* Responsive layout for social icons */
+@media (max-width: 767.98px) {
+  .col-4:nth-child(4),
+  .col-4:nth-child(5) {
+    margin-top: 15px; /* Adjust spacing between rows */
+  }
+  .offcanvas {
+    width: 100% !important;
+  }
+}
+
+/* Offcanvas background color */
+.offcanvas.show {
+  background-color: #14a0bf !important;
+}
+
+/* Align close button to the left */
+.offcanvas-header {
+  display: flex;
+  align-items: center;
+}
+
+.offcanvas-header .btn-close {
+  margin-right: auto;
+}
+
+.offcanvas-title {
+  margin-left: 1rem;
+}
+
+.custom-navbar {
+  background-color: black;
+  color: white;
+}
+#offcanvasNavbarLabel {
+  font-family: "Mont-SemiBold";
+  padding-top: 15rem;
+  font-size: large;
+}
