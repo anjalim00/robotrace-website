@@ -27,10 +27,10 @@
 }
 
 .rank-badge {
-    min-width: 50px;
-    min-height: 50px;
-    width: 30%;
-    height: 30%;
+    /* min-width: 50px; */
+    /* min-height: 50px; */
+    width: 50%;
+    height: auto;
     align-items: center;
 }
 
@@ -47,3 +47,52 @@
     border: 1px solid #041B2D;
     padding: 10px;
 }
+
+.rank-container {
+    position: relative;
+    display: inline-block;
+    width: 50px;  /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+}
+
+.default-rank {
+    min-width: 60px;
+    min-height: 60px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media (max-width: 576px) {
+    .default-rank {
+        min-width: 30px;
+        min-height: 30px;
+    }
+    .rank-number {
+        top: 50%;
+        left: 10%;
+        font-size: 2vw;
+    }
+}
+
+.ranks {
+    width: 40%;
+    height: auto;
+}
+
+.rank-number {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%); 
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: #6283ad;  
+    text-align: center;
+}
+
+.robot-img  {
+    width: 14%;
+    height: auto;
+    /* display: block; */
+}
+

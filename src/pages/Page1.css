@@ -146,20 +146,20 @@
 .title {
     position: absolute;
     /* top: 6%; */
-    top: 50%;  /* Adjust based on container */
+    top: 50%;  
     transform: translate(0%, -55%);
     width: 55%;
     height: auto;
     z-index: 1;
 }
 
-.tour-extreme {
+/* .tour-extreme {
   position: relative;
   top: 20.39%;
   width: 29.58%;
   height: auto;
   z-index: 1;
-}
+} */
 
 .bottom-section {
   position: relative;
@@ -221,10 +221,8 @@
     }
     .title {
         width: 80%;
-    }
-    .tour-extreme {
-        top: 10%;
-        width: 35%;
+        top: 50%;  
+        transform: translate(0%, -60%);
     }
     .facebook, .twitter, .youtube, .instagram, .discord{
         height: 4%;

@@ -6,7 +6,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import rank1 from '../assets/page3/icon_rank_gold@.png';
 import rank2 from '../assets/page3/icon_rank_silver.png';
 import rank3 from '../assets/page3/icon_rank_bronze.png';
-import defaultRank from '../assets/page3/icon_rank_default.png';
+import iRobot from '../assets/page3/iRobot.png';
+import Monobot from '../assets/page3/MonoBot.png';
+import Vektor from '../assets/page3/Vektor.png';
+import Podbot from '../assets/page3/PodBot.png';
+import Steamball from '../assets/page3/Steamball.png';
+import Tribot from '../assets/page3/TriBot.png';
+import Truk from '../assets/page3/Truk.png';
+
 import './Table.css'
 
 const TableComponent = () => {
@@ -34,6 +41,20 @@ const TableComponent = () => {
     }, []);
 
     const rankImages = [rank1, rank2, rank3];
+    const robotImages = {
+        "Monobot": Monobot,
+        "Vektor": Vektor,
+        "Steamball": Steamball,
+        "Tribot": Tribot,
+        "Truk": Truk,
+        "Podbot": Podbot,
+        "iRobot": iRobot,
+    };
+    const mapNames = {
+        "levelLA": "Lost Angeles", 
+        "levelMilitary": "Weapons Factory", 
+        "LevelElectric": "Electric Downtown",
+        "levelChinese": "Map"}
 
     return (
         <div>
@@ -53,7 +74,7 @@ const TableComponent = () => {
                                 <td style={{width: '15%'}}><img src={rankImages[index]} alt={`Rank ${index + 1}`} className="rank-badge"/></td>
                                 <td style={{width: '40%'}}>{player.playerName}</td>
                                 <td>{player.raceTime.toFixed(3)}</td>
-                                <td>{player.mapName}</td>
+                                <td>{mapNames[player.mapName]}</td>
                             </tr>
                         ))
                     ) : (

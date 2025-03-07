@@ -19,14 +19,14 @@ const Page3 = () => {
   return (
     <div className="container-fluid g-0 page3">
         <div className='row g-0'>
-            <div className='col-5 p-5 g-0'>
+            <div className='col-12 col-sm-5 p-5 g-0'>
                 <p className='lb-title'>Leaderboard</p>
                 <p className='lb-text'>It's a race to the end, but which one will be the hero?</p>
                 <div class="button-container">
                     <button class="custom-button" onClick={() => setShowModal(true)}>View All Leaderboards</button>
                 </div>
             </div>
-            <div className='col-7 g-0 '>
+            <div className='col-12 col-sm-7 g-0 '>
                 <div>
                     <TableComponent/>
                 </div>
@@ -87,25 +87,25 @@ const Page3 = () => {
 
         <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="modal">
                 <Modal.Header closeButton>
-                    <Modal.Title>Full Leaderboard</Modal.Title>
+                    <Modal.Title>Leaderboard</Modal.Title>
                     <Dropdown className="ms-3">
                         <Dropdown.Toggle variant="secondary">
                             {selectedMap}
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
                             <Dropdown.Item onClick={() => setSelectedMap("All Maps")}>All Maps</Dropdown.Item>
-                            <Dropdown.Item onClick={() => setSelectedMap("Map 1")}>Map 1</Dropdown.Item>
-                            <Dropdown.Item onClick={() => setSelectedMap("Map 2")}>Map 2</Dropdown.Item>
-                            <Dropdown.Item onClick={() => setSelectedMap("Map 3")}>Map 3</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectedMap("Weapons Factory")}>Weapons Factory</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectedMap("Lost Angeles")}>Lost Angeles</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectedMap("Electric Downtown")}>Electric Downtown</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </Modal.Header>
                 <Modal.Body>
                     <FullLeaderboard />
                 </Modal.Body>
-                <Modal.Footer>
+                {/* <Modal.Footer>
                     <Button variant="secondary" onClick={() => setShowModal(false)}>Close</Button>
-                </Modal.Footer>
+                </Modal.Footer> */}
         </Modal>
     </div>
   );

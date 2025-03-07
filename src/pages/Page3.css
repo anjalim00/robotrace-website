@@ -48,8 +48,19 @@
     padding-top: 5%;
   }
  
-  .modal {
-    background-color: #041B2D;
+  .custom-modal, .modal-content {
+    background-color: #000;
+    color: #e8e8e8;
+    border: 1px solid #1577ac;
+  }
+
+  .custom-modal, .modal-header .btn-close {
+    background-color: #1577ac !important;
+    /* filter: invert(1); */
+  }
+
+  .custom-modal, .modal-header {
+    border-bottom: 1px solid #1577ac;
   }
 
   .custom-button {

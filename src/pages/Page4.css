@@ -364,6 +364,9 @@
         margin: 10px 0;
         width: 18%;
     }
+    .footer-content{
+        font-size: 1.4vw;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {

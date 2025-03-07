@@ -7,19 +7,10 @@ import "./Page1.css";
 // Page1
 import AppStoreButton from "../assets/page4/iOS-download-button-COPY@.png";
 import PlayStoreButton from "../assets/page4/Android-Download-Button-COPY@.png";
-import DiscordButton from "../assets/page1/Discord_normal@.png";
-import FacebookButton from "../assets/page1/Facebook_normal@.png";
-import TwitterButton from "../assets/page1/X_normal@.png";
-import InstagramButton from "../assets/page1/Instagram_normal@.png";
-import YoutubeButton from "../assets/page1/Youtube_normal@.png";
 import EDlogo from "../assets/page1/ED-logo@.png";
 import EDname from "../assets/page1/Easley-Dunn@.png";
 import Movie from "../assets/page1/MoviePlacement.mp4";
-import DynamicText from "../assets/page1/Page1_DYNAMIC_TEXT@.png";
-import RRtitle from "../assets/page1/Robot-Race-title@.png";
 import RRicon from "../assets/page1/RobotRace_icon@.png";
-import TourExtreme from "../assets/page1/tour-extreme@.png";
-import ShareButton from "../assets/page1/Share_button.png";
 import Header from "../components/Header.js";
 import Title from '../assets/page1/Title.png';
 
@@ -48,11 +39,6 @@ const Page1 = () => {
             alt='Robot Race Title'
             className='img-fluid title'
         />
-        {/* <img
-            src={TourExtreme}
-            alt='Tour Extreme'
-            className='img-fluid tour-extreme'
-        /> */}
         
       </div>
       <div className="bottom-section justify-content-center align-items-center g-0">

@@ -1,7 +1,7 @@
 {
   "name": "robotrace-website",
   "version": "0.1.0",
-  "homepage": "https://robotracegame.com",
+  "homepage": "https://anjalim00.github.io/robotrace-website/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
