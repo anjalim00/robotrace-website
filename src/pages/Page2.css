@@ -1,4 +1,4 @@
-.page2 {
+/* .page2 {
     position: relative;
     background-color: black;
     width: 100%;
@@ -32,5 +32,58 @@
     }
     .content {
         font-size: 2.5vw;
+    }
+} */
+
+.page2 {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10%;
+    overflow-x: hidden;
+}
+
+.headings {
+    font-family: 'Mont-Regular';
+    font-size: 3vw;
+    color: #e8e8e8;
+    line-height: 1.2;
+}
+
+.content {
+    font-family: 'Mont-Regular';
+    font-size: 1.4vw;
+    white-space: nowrap;
+    color: #e8e8e8;
+    line-height: 2;
+}
+
+.movie {
+    transition: 10s;
+}
+
+@media (max-width: 576px) {
+    .headings {
+        font-size: 3.5vw;
+    }
+    .content {
+        font-size: 2.5vw;
+        white-space: normal; /* Allow text wrapping */
+    }
+
+    /* Reduce the spacing between sections */
+    .row {
+        margin-bottom: 0px !important;
+        padding-bottom: 0% !important;
+        padding-top: 0% !important;
+    }
+
+    /* Reduce the padding for better fit */
+    .p-4 {
+        padding: 1rem !important;
+    }
+    .cb {
+        padding-bottom: 0rem !important;
     }
 }

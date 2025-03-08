@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page4.css';
@@ -70,6 +70,8 @@ const Page4 = () => {
     useEffect(() => {
         console.log('Updated message:', message); // Log the updated message after it changes
       }, [message]); // This will run whenever the `message` state changes
+
+     
 
   return (
     <div className="container-fluid g-0 page4">

@@ -23,7 +23,6 @@
     background-color: black;
     width: 100%;
     height: fit-content;
-    padding-top: 3%;
     overflow-x: hidden;
 }
 
@@ -46,21 +45,6 @@
     justify-content: left;
     align-items: center;
     padding-top: 5%;
-  }
- 
-  .custom-modal, .modal-content {
-    background-color: #000;
-    color: #e8e8e8;
-    border: 1px solid #1577ac;
-  }
-
-  .custom-modal, .modal-header .btn-close {
-    background-color: #1577ac !important;
-    /* filter: invert(1); */
-  }
-
-  .custom-modal, .modal-header {
-    border-bottom: 1px solid #1577ac;
   }
 
   .custom-button {
@@ -138,7 +122,7 @@
     font-family: 'Mont-SemiBold';
   }
 
-.post1, .post3 {
+.post1, .post2, .post3 {
   animation: brightnessAnimation 1s infinite alternate;
   }
 
@@ -148,3 +132,26 @@
     100% { filter: brightness(1.5); }
   }
 
+  @media (max-width: 576px) {
+    .carousel-indicators {
+      display: none !important;
+    }
+    .p-5 {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+      text-align: center; /* Center text */
+      justify-content: center !important; /* Center content */
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+    } 
+    .lb-title {
+      font-size: 4vw;
+    } 
+    .lb-text {
+      font-size: 2vw;
+    }
+    .custom-button {
+      font-size: 2.5vw;
+    }
+  }

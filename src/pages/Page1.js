@@ -26,51 +26,24 @@ const Page1 = () => {
       <img src={RRicon} alt="Robot Race Icon" className="img-fluid rr-icon" />
 
       <div className="wrapper d-flex justify-content-center align-items-center g-0">
-        <video
-          src={Movie}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="background-video"
+        <video src={Movie} autoPlay loop muted playsInline className="background-video"
         />
-        <img
-            src={Title}
-            alt='Robot Race Title'
-            className='img-fluid title'
-        />
+        <img src={Title} alt='Robot Race Title' className='img-fluid title' />
         
       </div>
       <div className="bottom-section justify-content-center align-items-center g-0">
+
         <p className="page1-dynamic-text">Join in The Competition Now!</p>
-        {/* <div className='row d-flex justify-content-center align-items-center'> */}
-        {/* <div className="col-auto d-flex justify-content-center align-items-center"> */}
-        <a
-          href="https://apps.apple.com/ge/app/robot-race/id539184198#?platform=iphone"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={AppStoreButton}
-            alt="Apple Store Button"
-            className="img-fluid appstore"
-          />
-        </a>
-        {/* </div> */}
-        {/* <div className="col-auto d-flex justify-content-center align-items-center"> */}
-        <a
-          href="https://play.google.com/store/apps/details?id=com.easleydunnproductions.robotrace&hl=en_US&gl=US"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={PlayStoreButton}
-            alt="Google Playstore Button"
-            className="img-fluid playstore"
-          />
-        </a>
-        {/* </div> */}
-        {/* </div> */}
+
+        <div className='d-flex justify-content-center align-items-center py-5 store-btn'>
+          <a href="https://apps.apple.com/ge/app/robot-race/id539184198#?platform=iphone" target="_blank" rel="noopener noreferrer" className="appstore">
+            <img src={AppStoreButton} alt="Apple Store Button" className="img-fluid " />
+          </a>
+
+          <a href="https://play.google.com/store/apps/details?id=com.easleydunnproductions.robotrace&hl=en_US&gl=US" target="_blank" rel="noopener noreferrer" className="playstore">
+            <img src={PlayStoreButton} alt="Google Playstore Button" className="img-fluid " />
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -62,7 +62,7 @@ const Page2 = () => {
             <video src={BottomMov} className='col-12 col-sm-6 d-flex justify-content-center align-items-center p-3' autoPlay loop muted playsInline/>
             <div className='col-12 col-sm-6 d-flex flex-column justify-content-center align-items-start p-4'>
                 <p className='headings'>Free your Union by Becoming the Champion</p>
-                <p className='content'>Become the hero for your robot family in the wake of the<br/>post-apocalyptic future. Save your entire clan from demise<br/>by leveling up, racing in the interdimensional circuit and rise<br/>to become the legend!</p>
+                <p className='content cb'>Become the hero for your robot family in the wake of the<br/>post-apocalyptic future. Save your entire clan from demise<br/>by leveling up, racing in the interdimensional circuit and rise<br/>to become the legend!</p>
             </div>
         </motion.div>
     </div>

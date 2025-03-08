@@ -71,9 +71,9 @@ const TableComponent = () => {
                     {topPlayers.length > 0 ? (
                         topPlayers.map((player, index) => (
                             <tr key={player.id}>
-                                <td style={{width: '15%'}}><img src={rankImages[index]} alt={`Rank ${index + 1}`} className="rank-badge"/></td>
-                                <td style={{width: '40%'}}>{player.playerName}</td>
-                                <td>{player.raceTime.toFixed(3)}</td>
+                                <td style={{width: '16%'}}><img src={rankImages[index]} alt={`Rank ${index + 1}`} className="rank-badge"/></td>
+                                <td style={{width: '34%'}}><img src={robotImages[player.robotName] || Vektor} alt={player.robotName} className="robot-img"/>&ensp; {player.playerName}</td>
+                                <td style={{width: '20%'}}>{player.raceTime.toFixed(3)}</td>
                                 <td>{mapNames[player.mapName]}</td>
                             </tr>
                         ))

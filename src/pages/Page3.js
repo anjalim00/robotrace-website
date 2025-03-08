@@ -86,10 +86,12 @@ const Page3 = () => {
         </Carousel>
 
         <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" centered className="modal">
-                <Modal.Header closeButton>
-                    <Modal.Title>Leaderboard</Modal.Title>
-                    <Dropdown className="ms-3">
-                        <Dropdown.Toggle variant="secondary">
+                <Modal.Header closeButton className="m-header">
+                    <Modal.Title className="m-title">Leaderboard</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Dropdown className="ms-auto dd-right">
+                        <Dropdown.Toggle variant="secondary" className="drop-down">
                             {selectedMap}
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
@@ -99,9 +101,7 @@ const Page3 = () => {
                             <Dropdown.Item onClick={() => setSelectedMap("Electric Downtown")}>Electric Downtown</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
-                </Modal.Header>
-                <Modal.Body>
-                    <FullLeaderboard />
+                    <FullLeaderboard selectedMap={selectedMap} />
                 </Modal.Body>
                 {/* <Modal.Footer>
                     <Button variant="secondary" onClick={() => setShowModal(false)}>Close</Button>

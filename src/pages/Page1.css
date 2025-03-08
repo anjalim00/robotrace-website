@@ -145,7 +145,6 @@
 
 .title {
     position: absolute;
-    /* top: 6%; */
     top: 50%;  
     transform: translate(0%, -55%);
     width: 55%;
@@ -153,45 +152,34 @@
     z-index: 1;
 }
 
-/* .tour-extreme {
-  position: relative;
-  top: 20.39%;
-  width: 29.58%;
-  height: auto;
-  z-index: 1;
-} */
-
 .bottom-section {
   position: relative;
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 30%;
-  height: auto;
+  /* height: auto; */
 }
 
 .page1-dynamic-text {
-  position: absolute;
+  position: relative;
   top: 12%;
   font-family: "Mont-SemiBold";
   font-size: 3.1vw;
   color: #e8e8e8;
 }
 
+.store-btn {
+  gap: 10%;
+}
+
 .appstore {
-  position: absolute;
-  left: 31%;
-  top: 47%;
-  width: 16%;
+  width: 100%;
   height: auto;
 }
 
 .playstore {
-  position: absolute;
-  left: 51%;
-  top: 47%;
-  width: 16%;
+  width: 100%;
   height: auto;
 }
 
@@ -214,7 +202,7 @@
 
 @media (max-width: 576px) {
     .wrapper video{
-        height: 80%;
+        height: 85%;
     }
     .ed-logo, .ed-name{
         display: none;
@@ -237,19 +225,19 @@
         left: 10%;
         height: 13%;
     }
-    .bottom-section {
-        min-height: 20%;
-    }
     .page1-dynamic-text {
-        font-size: 3.5vw;
+        font-size: 4vw;
         top: -10%;
     }
+    .store-btn {
+      padding-top: 0% !important;
+    }
     .appstore,.playstore{
-        width: 20%;
+        width: 25%;
         top: 30%;
     }
-    .appstore{ left: 25%; }
-    .playstore{ left: 55%; }
+    /* .appstore{ left: 25%; }
+    .playstore{ left: 55%; } */
 }
 
 @media (min-width: 577px) and (max-width: 768px) {

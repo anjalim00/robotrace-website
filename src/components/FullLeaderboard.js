@@ -15,7 +15,7 @@ import Steamball from '../assets/page3/Steamball.png';
 import Tribot from '../assets/page3/TriBot.png';
 import Truk from '../assets/page3/Truk.png';
 
-const FullLeaderboard = () => {
+const FullLeaderboard = ({ selectedMap }) => {
     const [players, setPlayers] = useState([]);
 
     useEffect(() => {
@@ -50,6 +50,10 @@ const FullLeaderboard = () => {
         "levelMilitary": "Weapons Factory", 
         "levelElectric": "Electric Downtown",
         "levelChinese": "Map"}
+    
+    const filteredPlayers = selectedMap === "All Maps"
+    ? players
+    : players.filter(player => mapNames[player.mapName] === selectedMap);
 
     return (
         <div className="scrollable-container">
@@ -63,22 +67,22 @@ const FullLeaderboard = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {players.length > 0 ? (
-                        players.map((player, index) => (
+                    {filteredPlayers.length > 0 ? (
+                        filteredPlayers.map((player, index) => (
                             <tr key={player.id}>
-                                <td>
-                                    {index < 3 ? ( // Show gold, silver, bronze for top 3
-                                        <img src={rankImages[index]} alt={`Rank ${index + 1}`} className="ranks" />
+                                <td style={{width: '16%', paddingRight: '7%'}}>
+                                    {index < 3 ? ( 
+                                        <img src={rankImages[index]} alt={`Rank ${index + 1}`} className="top-ranks" />
                                     ) : (
                                         <div className="rank-container">
                                             <img src={rank} alt="Default Rank" className="default-rank" />
-                                            <span className="rank-number">{index + 1}</span> {/* Show rank number */}
+                                            <span className="rank-number">{index + 1}</span> 
                                         </div>
                                     )}
                                 </td>
-                                <td>
-                                    <img src={robotImages[player.robotName] || Vektor} alt={player.robotName} className="robot-img"/>  {player.playerName}</td>
-                                <td>{player.raceTime.toFixed(3)}</td>
+                                <td style={{width: '34%'}}>
+                                    <img src={robotImages[player.robotName] || Vektor} alt={player.robotName} className="robot-img"/>&ensp; {player.playerName}</td>
+                                <td style={{width: '20%'}}>{player.raceTime.toFixed(3)}</td>
                                 <td>{mapNames[player.mapName]}</td>
                             </tr>
                         ))
