@@ -158,7 +158,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: auto; */
+  /* height: 100%; */
 }
 
 .page1-dynamic-text {
@@ -221,9 +221,9 @@
     .instagram{ left: 81%; }
     .discord{ left: 90%; }
     .rr-icon{
-        top: 5%;
+        top: 2%;
         left: 10%;
-        height: 13%;
+        height: 9.5%;
     }
     .page1-dynamic-text {
         font-size: 4vw;
@@ -255,5 +255,26 @@
   }
   .discord {
     left: 90%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page1-dynamic-text {
+    padding-top: 2% ;
+  }
+  .as-img, .ps-img {
+    width: 250px; 
+    height: auto;
+  }
+}
+
+@media (min-width: 2560px) {
+  .page1-dynamic-text {
+    padding-top: 2% ;
+    padding-bottom: 2%;
+  }
+  .as-img, .ps-img {
+    width: 450px; 
+    height: auto;
   }
 }

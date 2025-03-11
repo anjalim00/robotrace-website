@@ -23,7 +23,7 @@ const Page3 = () => {
                 <p className='lb-title'>Leaderboard</p>
                 <p className='lb-text'>It's a race to the end, but which one will be the hero?</p>
                 <div class="button-container">
-                    <button class="custom-button" onClick={() => setShowModal(true)}>View All Leaderboards</button>
+                    <button class="custom-button" onClick={() => {  setShowModal(true); }}>View All Leaderboards</button>
                 </div>
             </div>
             <div className='col-12 col-sm-7 g-0 '>
@@ -99,6 +99,9 @@ const Page3 = () => {
                             <Dropdown.Item onClick={() => setSelectedMap("Weapons Factory")}>Weapons Factory</Dropdown.Item>
                             <Dropdown.Item onClick={() => setSelectedMap("Lost Angeles")}>Lost Angeles</Dropdown.Item>
                             <Dropdown.Item onClick={() => setSelectedMap("Electric Downtown")}>Electric Downtown</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectedMap("Biodome")}>Biodome</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectedMap("White City")}>White City</Dropdown.Item>
+                            <Dropdown.Item onClick={() => setSelectedMap("Chinatown")}>Chinatown</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                     <FullLeaderboard selectedMap={selectedMap} />

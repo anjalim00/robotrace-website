@@ -49,7 +49,9 @@ const FullLeaderboard = ({ selectedMap }) => {
         "levelLA": "Lost Angeles", 
         "levelMilitary": "Weapons Factory", 
         "levelElectric": "Electric Downtown",
-        "levelChinese": "Map"}
+        "levelBiodome": "Biodome",
+        "levelWhitecity": "White City",
+        "levelChinese": "Chinatown"}
     
     const filteredPlayers = selectedMap === "All Maps"
     ? players

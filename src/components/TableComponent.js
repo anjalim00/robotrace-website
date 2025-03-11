@@ -54,7 +54,9 @@ const TableComponent = () => {
         "levelLA": "Lost Angeles", 
         "levelMilitary": "Weapons Factory", 
         "LevelElectric": "Electric Downtown",
-        "levelChinese": "Map"}
+        "levelBiodome": "Biodome",
+        "levelWhitecity": "White City",
+        "levelChinese": "Chinatown"}
 
     return (
         <div>

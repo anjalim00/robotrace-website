@@ -61,7 +61,7 @@ function Header() {
                   <div className="d-none d-md-flex row justify-content-end align-items-center w-100 px-0 mt-5">
                     <div className="col-auto  ">
                       <a
-                        href="https://www.facebook.com/robotrace/"
+                        href="https://www.facebook.com/robotrace"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -74,7 +74,7 @@ function Header() {
                     </div>
                     <div className="col-auto">
                       <a
-                        href="https://x.com/EasleyDunnGames"
+                        href="https://x.com/robotracegame"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -87,7 +87,7 @@ function Header() {
                     </div>
                     <div className="col-auto">
                       <a
-                        href="https://www.youtube.com/@easleydunn"
+                        href="https://www.youtube.com/@RobotRace-w8f"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
