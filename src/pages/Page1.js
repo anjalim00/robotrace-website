@@ -26,10 +26,8 @@ const Page1 = () => {
       <img src={RRicon} alt="Robot Race Icon" className="img-fluid rr-icon" />
 
       <div className="wrapper d-flex justify-content-center align-items-center g-0">
-        <video src={Movie} autoPlay loop muted playsInline className="background-video"
-        />
-        <img src={Title} alt='Robot Race Title' className='img-fluid title' />
-        
+        <video src={Movie} autoPlay loop muted playsInline className="background-video" />
+        <img src={Title} alt='Robot Race Title' className='img-fluid title' /> 
       </div>
       <div className="bottom-section justify-content-center align-items-center g-0">
 

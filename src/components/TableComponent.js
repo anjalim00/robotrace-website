@@ -71,14 +71,22 @@ const TableComponent = () => {
                 </thead>
                 <tbody>
                     {topPlayers.length > 0 ? (
-                        topPlayers.map((player, index) => (
+                        topPlayers.map((player, index) => {
+                            const totalMs = player.raceTime;
+                            const minutes = Math.floor(totalMs / 60000); // Convert to minutes
+                            const seconds = Math.floor((totalMs % 60000) / 1000); // Get remaining seconds
+                            const milliseconds = Math.floor(totalMs % 1000);
+            
+                        return (
+                            
                             <tr key={player.id}>
                                 <td style={{width: '16%'}}><img src={rankImages[index]} alt={`Rank ${index + 1}`} className="rank-badge"/></td>
                                 <td style={{width: '34%'}}><img src={robotImages[player.robotName] || Vektor} alt={player.robotName} className="robot-img"/>&ensp; {player.playerName}</td>
-                                <td style={{width: '20%'}}>{player.raceTime.toFixed(3)}</td>
+                                <td style={{width: '20%'}}>{minutes}:{seconds}:{milliseconds} MIN</td>
                                 <td>{mapNames[player.mapName]}</td>
                             </tr>
-                        ))
+                        );
+                    })
                     ) : (
                         <tr>
                             <td colSpan="4" className="loading-text">Loading...</td>

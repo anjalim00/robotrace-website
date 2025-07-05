@@ -97,7 +97,7 @@ const Page4 = () => {
         <img src={TextBox} alt="Text Box" className="text-box img-fluid" />
         <h2 className="stay-connected">STAY CONNECTED!</h2>
         <p className="p4-content">
-            Sign up for our mailing list to hear about the upcoming Multiplayer<br/> release this December and receive special passwords for secret tracks!
+            Sign up for our mailing list to hear about the upcoming Multiplayer<br/> release this April and receive special passwords for secret tracks!
         </p>
         
         <div class="name-container">

@@ -70,7 +70,13 @@ const FullLeaderboard = ({ selectedMap }) => {
                 </thead>
                 <tbody>
                     {filteredPlayers.length > 0 ? (
-                        filteredPlayers.map((player, index) => (
+                        filteredPlayers.map((player, index) => {
+                            const totalMs = player.raceTime;
+                            const minutes = Math.floor(totalMs / 60);
+                            console.log(minutes) // Convert to minutes
+                            const seconds = Math.floor(totalMs % 60); // Get remaining seconds
+                            const milliseconds = Math.floor((Math.floor((totalMs % 1) * 1000))/10);
+                        return (
                             <tr key={player.id}>
                                 <td style={{width: '16%', paddingRight: '7%'}}>
                                     {index < 3 ? ( 
@@ -84,10 +90,10 @@ const FullLeaderboard = ({ selectedMap }) => {
                                 </td>
                                 <td style={{width: '34%'}}>
                                     <img src={robotImages[player.robotName] || Vektor} alt={player.robotName} className="robot-img"/>&ensp; {player.playerName}</td>
-                                <td style={{width: '20%'}}>{player.raceTime.toFixed(3)}</td>
+                                <td style={{width: '20%'}}>{minutes}:{seconds}:{milliseconds} MIN</td>
                                 <td>{mapNames[player.mapName]}</td>
                             </tr>
-                        ))
+                        );})
                     ) : (
                         <tr>
                             <td colSpan="4" className="loading-text">Loading...</td>

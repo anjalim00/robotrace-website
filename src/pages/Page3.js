@@ -18,7 +18,7 @@ const Page3 = () => {
 
   return (
     <div className="container-fluid g-0 page3">
-        <div className='row g-0'>
+        {/* <div className='row g-0'>
             <div className='col-12 col-sm-5 p-5 g-0'>
                 <p className='lb-title'>Leaderboard</p>
                 <p className='lb-text'>It's a race to the end, but which one will be the hero?</p>
@@ -31,11 +31,11 @@ const Page3 = () => {
                     <TableComponent/>
                 </div>
             </div>
-        </div>
+        </div> */}
         <img src={Separator} alt="Separator image" className="separator" />
         <p className="news-updates">NEWS and UPDATES</p>
 
-        <Carousel interval={5000} wrap={true} pause={false} indicators={true} controls={false}>
+            <Carousel interval={5000} wrap={true} pause={false} indicators={true} controls={false}>
             {/* Slide 1 */}
             <Carousel.Item>
                 <div className="row px-5 pb-5 d-flex align-items-center justify-content-center">
